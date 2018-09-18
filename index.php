@@ -1,5 +1,5 @@
 <?php
-    include("config.php");
+    require("config.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -11,6 +11,8 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <a href="data.php" id="button">View Data</a>
+<!-- =============================================================================== -->
         <div class="form">
             <div id="title">
                 <h3>Input Data</h3>
@@ -22,7 +24,7 @@
                     <b>Nama</b> <br><input type="text" name="nama" required><br><br>
                     
                     <b>Fakultas</b> <br>
-                    <select name="fakultas" id="dropdown">
+                    <select name="fakultas" id="dropdown" required>
                         <option value="FTE">FTE</option>
                         <option value="FRI">FRI</option>
                         <option value="FIF">FIF</option>
@@ -34,8 +36,8 @@
                     <br><br>
                     
                     <b>Jenis Kelamin : </b>
-                    <input type="radio" name="jk" value="Laki-laki"> Laki-Laki
-                    <input type="radio" name="jk" value="Perempuan"> Perempuan <br><br>
+                    <input type="radio" name="jk" value="Laki-laki" required> Laki-Laki
+                    <input type="radio" name="jk" value="Perempuan" required> Perempuan <br><br>
                     
                     <b>Foto : </b><input type="file" name="foto" required><br><br>
                     
@@ -43,6 +45,7 @@
                 </form>
             </div>
         </div>
+<!-- =============================================================================== -->
     </body>
 </html>
 <?php
