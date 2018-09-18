@@ -1,5 +1,5 @@
 <?php
-  $host = "localhost";
+  	$host = "localhost";
 	$user = "root";
 	$pass = "";
 	$db = "db_tugas";
